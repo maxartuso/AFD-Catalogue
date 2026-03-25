@@ -1,0 +1,6 @@
+streamlit
+pandas
+openai
+sentence-transformers
+faiss-cpu
+numpy<2
