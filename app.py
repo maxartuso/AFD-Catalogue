@@ -81,7 +81,7 @@ if df is not None:
             # D. Appel direct à OpenAI
             try:
                 response = client.chat.completions.create(
-                    model="gpt-5.2-mini",
+                    model="gpt-5.2",
                     messages=[
                         {"role": "system", "content": "Tu es un conseiller expert en autisme."},
                         {"role": "user", "content": prompt_systeme}
