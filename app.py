@@ -60,7 +60,7 @@ if df is not None:
         with st.spinner("Recherche des meilleures solutions..."):
             # A. Trouver les 3 produits les plus pertinents
             query_vector = model.encode([query])
-            distances, indices = index.search(np.array(query_vector).astype('float32'), k=3)
+            distances, indices = index.search(np.array(query_vector).astype('float32'), k=5)
 
             # B. Construire la liste des produits pour l'IA
             contexte_produits = ""
